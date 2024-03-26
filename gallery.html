@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Government Polytechnic Mumbai</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(500px, 3fr));
+      gap: 30px;
+    }
+
+    .photo {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+    }
+
+    .photo .description {
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 5px;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .photo:hover .description {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="GPM-LOGO-2021.png" alt="College Logo">
+    </div>
+    <h1>Government Polytechnic Mumbai</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html#">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="gallery">
+        <h2>College Gallery</h2>
+        <div class="photo-grid">
+          <div class="photo">
+            <img src="WhatsApp Image 2023-10-06 at 15.16.21_93a8e85d.jpg" alt="Photo 1">
+            <div class="description">Whole AIML department team visiting Drone Expo</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2023-11-24 at 21.16.20_3db3893f.jpg" alt="Photo 2">
+            <div class="description">IIIC team of AIML dpt visiting the Rujuta Kambli at Mahindra and Mahindra</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2024-03-21 at 19.04.48_e25a5141.jpg" alt="Photo 3">
+            <div class="description">College celebrating traditional day</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2024-02-21 at 12.17.56_7e34a739.jpg" alt="Photo 4">
+            <div class="description">NTLf team meeting the Lakshmi shankar sir
+            nvestor and Former Vice President of Google, Ex-Twitter.</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2023-11-07 at 21.20.12_27640071.jpg" alt="Photo 5">
+            <div class="description">Meeting Executive director</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2024-02-20 at 16.36.33_a907161b.jpg" alt="Photo 6">
+            <div class="description">Ask me Anything session at NTLF largest global summit with Kirthi Seth CEO of Nasscom</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2023-11-24 at 21.18.27_356b7e92.jpg" alt="Photo 7">
+            <div class="description">IIIC team in Mahindra and Mahindra for industrial visit</div>
+          </div>
+          <!-- Additional photos -->
+          <div class="photo">
+            <img src="WhatsApp Image 2023-10-26 at 22.11.22_fd2ad2a7.jpg" alt="Photo 8">
+            <div class="description">Drone Lab innovation</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2023-11-24 at 19.51.10_34c7d650.jpg" alt="Photo 9">
+            <div class="description">Industrial talk with shashikumar sir</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2024-02-20 at 11.09.06_d0b4244c.jpg" alt="Photo 10">
+            <div class="description">NTLF global summit</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2024-01-24 at 19.36.46_13044f36.jpg" alt="Photo 11">
+            <div class="description">AI conclave 2024 in GPM by AIML DPt</div>
+          </div>
+          <!-- Photo 8 -->
+          <div class="photo">
+            <img src="WhatsApp Image 2023-10-06 at 15.16.21_93a8e85d.jpg"alt="Photo 12">
+            <div class="description">AIML team at Drone Expo(Nesco)</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2024-02-20 at 12.45.44_8ea9c77a.jpg" alt="Photo 13">
+            <div class="description">NTLF team with HOD Prof.Subhash Kasture in global Summit at Nasscom</div>
+          </div>
+          <!-- Photo 8 -->
+          <div class="photo">
+            <img src="WhatsApp Image 2023-11-07 at 21.20.01_a38874e3.jpg" alt="Photo 14">
+            <div class="description">Meeting with DTE director</div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2023-11-07 at 21.19.47_9674ffa9.jpg" alt="Photo 15">
+            <div class="description">IIIc team with wagh sir board member of AIML dept.</div>
+          </div>
+          <!-- Photo 8 -->
+          <div class="photo">
+            <img src="WhatsApp Image 2023-11-07 at 21.20.08_1185bc44.jpg" alt="Photo 16">
+            <div class="description">IIIc team with Kazi sir board member of AIML dept </div>
+          </div>
+          <div class="photo">
+            <img src="WhatsApp Image 2024-01-24 at 19.37.34_2d540f19.jpg" alt="Photo 17">
+            <div class="description">AI conclave 2024 whole team</div>
+          </div>
+          <!-- Photo 8 -->
+          <div class="photo">
+            <img src="WhatsApp Image 2024-02-20 at 12.45.44_70705d28.jpg" alt="Photo 18">
+            <div class="description">NTLF team</div>
+          </div>
+
+
+
+

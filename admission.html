@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission - Government Polytechnic Mumbai</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function updateCourses() {
+      var department = document.getElementById("department").value;
+      var coursesDropdown = document.getElementById("course");
+      coursesDropdown.innerHTML = ""; // Clear existing options
+      
+      var courses;
+      if (department === "Arts") {
+        courses = ["English", "Sociology", "History"]; // Example courses for Arts
+      } else if (department === "Science") {
+        courses = ["Computer Science", "Mathematics", "Physics"]; // Example courses for Science
+      } else if (department === "Commerce") {
+        courses = ["Accounting", "Economics", "Business Studies"]; // Example courses for Commerce
+      } else {
+        courses = []; // No courses for other departments
+      }
+      
+      courses.forEach(function(course) {
+        var option = document.createElement("option");
+        option.text = course;
+        coursesDropdown.add(option);
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="GPM-LOGO-2021.png" alt="College Logo">
+    </div>
+    <h1>Government Polytechnic Mumbai</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html#">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <section class="admission-form">
+        <h2>Admission Form</h2>
+        <form action="#" method="post">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+
+          <label for="department">Select Department:</label>
+          <select id="department" name="department" onchange="updateCourses()" required>
+            <option value="">Select</option>
+            <option value="Arts">Arts</option>
+            <option value="Science">Science</option>
+            <option value="Commerce">Commerce</option>
+          </select>
+
+          <label for="course">Select Course:</label>
+          <select id="course" name="course" required>
+            <option value="">Select Department first</option>
+          </select>
+
+          <label for="message">Message (if any):</label>
+          <textarea id="message" name="message"></textarea>
+
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>Contact Us: governmentpolytechnic@gmail.com | Phone: 123-456-7890</p>
+  </footer>
+</body>
+</html>
